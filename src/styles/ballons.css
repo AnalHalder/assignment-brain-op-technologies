@@ -1,0 +1,49 @@
+.image-container {
+    text-align: center;
+  }
+   button{
+    display: flex;
+    justify-content: left;
+    margin: 1rem;
+    width: 10rem;
+    height: 3rem;
+    padding: 12px;
+  }
+  .image-container button:hover{
+      background-color: bisque;
+      color: black;
+  }
+  .active{
+    background-color: aliceblue;
+  }
+  
+  .animated-image {
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .animate {
+    width: 350px;
+    animation: inflate .5s infinite alternate, moveUpDown .7s infinite alternate;
+  }
+  
+  @keyframes inflate {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-40px);
+    }
+  }
+  
